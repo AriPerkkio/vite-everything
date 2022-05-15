@@ -5,7 +5,7 @@
     -   bundle
 -   [x] `typescript`
     -   typecheck
--   [ ] `storybook`
+-   [x] `storybook`
     -   development
     -   documentation
 -   [x] `vitest`

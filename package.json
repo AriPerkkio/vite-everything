@@ -10,7 +10,8 @@
         "test": "vitest",
         "test:component": "cypress run-ct --config-file config/cypress/cypress.json",
         "cy:open-ct": "cypress open-ct --config-file config/cypress/cypress.json",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "storybook": "start-storybook --port 6006 --config-dir config/storybook --quiet --loglevel error"
     },
     "dependencies": {
         "react": "^18.0.0",
@@ -19,6 +20,9 @@
     "devDependencies": {
         "@cypress/react": "^5.12.4",
         "@cypress/vite-dev-server": "2.2.2",
+        "@mdx-js/react": "^2.1.1",
+        "@storybook/builder-vite": "^0.1.33",
+        "@storybook/react": "^6.4.22",
         "@testing-library/cypress": "^8.0.2",
         "@types/node": "^16.11.7",
         "@types/react": "^18.0.0",
