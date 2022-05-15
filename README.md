@@ -5,19 +5,19 @@
   - bundle
 - [x] `typescript`
   - typecheck
-- [] `storybook`
+- [ ] `storybook`
   - development
   - documentation
-- [] `vitest`
+- [ ] `vitest`
   - unit test, headless logic
-- [] `cypress`
+- [ ] `cypress`
   - component test
   - integration test
   - end-to-end test
-- [] `sass`
+- [ ] `sass`
   - styling
 - [x] `gh-pages`
   - deployment
-- [] `eslint`, `prettier`
+- [ ] `eslint`, `prettier`
   - format
   - lint
