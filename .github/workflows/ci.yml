@@ -23,3 +23,12 @@ jobs:
 
             - name: Lint
               run: yarn lint
+
+            - name: Unit Test
+              run: yarn test
+
+            - name: Component Test
+              uses: cypress-io/github-action@v2
+              with:
+                  command: yarn test:component
+                  config-file: config/cypress/cypress.json
