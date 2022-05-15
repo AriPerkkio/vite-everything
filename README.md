@@ -1,23 +1,23 @@
 # vite-everything
 
-- [x] `vite`
-  - development
-  - bundle
-- [x] `typescript`
-  - typecheck
-- [ ] `storybook`
-  - development
-  - documentation
-- [ ] `vitest`
-  - unit test, headless logic
-- [ ] `cypress`
-  - component test
-  - integration test
-  - end-to-end test
-- [ ] `sass`
-  - styling
-- [x] `gh-pages`
-  - deployment
-- [ ] `eslint`, `prettier`
-  - format
-  - lint
+-   [x] `vite`
+    -   development
+    -   bundle
+-   [x] `typescript`
+    -   typecheck
+-   [ ] `storybook`
+    -   development
+    -   documentation
+-   [ ] `vitest`
+    -   unit test, headless logic
+-   [ ] `cypress`
+    -   component test
+    -   integration test
+    -   end-to-end test
+-   [ ] `sass`
+    -   styling
+-   [x] `gh-pages`
+    -   deployment
+-   [ ] `eslint`, `prettier`
+    -   format
+    -   lint
