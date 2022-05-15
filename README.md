@@ -1,5 +1,7 @@
 # vite-everything
 
+Deployed at https://ariperkkio.github.io/vite-everything/.
+
 -   [x] `vite`
     -   development
     -   bundle
