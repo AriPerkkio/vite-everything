@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -7,5 +8,8 @@ export default defineConfig({
     server: {
         // Fixes HMR in Github Codespaces
         hmr: { clientPort: 443 },
+    },
+    test: {
+        reporters: ['verbose'],
     },
 });

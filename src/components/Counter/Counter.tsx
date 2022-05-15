@@ -16,4 +16,5 @@ export function reducer(count: number): number {
     return count + 1;
 }
 
+Counter.displayName = 'Counter';
 export default Counter;
