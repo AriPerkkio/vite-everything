@@ -11,7 +11,7 @@
 -   [x] `vitest`
     -   unit test, headless logic
 -   [ ] `cypress`
-    -   component test
+    -   [x] component test
     -   integration test
     -   end-to-end test
 -   [x] `sass`
