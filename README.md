@@ -14,7 +14,7 @@
     -   component test
     -   integration test
     -   end-to-end test
--   [ ] `sass`
+-   [x] `sass`
     -   styling
 -   [x] `gh-pages`
     -   deployment
