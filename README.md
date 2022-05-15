@@ -8,7 +8,7 @@
 -   [ ] `storybook`
     -   development
     -   documentation
--   [ ] `vitest`
+-   [x] `vitest`
     -   unit test, headless logic
 -   [ ] `cypress`
     -   component test
