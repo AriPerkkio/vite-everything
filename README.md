@@ -18,6 +18,6 @@
     -   styling
 -   [x] `gh-pages`
     -   deployment
--   [ ] `eslint`, `prettier`
+-   [x] `eslint`, `prettier`
     -   format
     -   lint
