@@ -7,5 +7,16 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "wesbos.theme-cobalt2"
-    ]
+    ],
+    "portsAttributes": {
+        "3000": {
+            "label": "Vite"
+        },
+        "6006": {
+            "label": "Storybook"
+        },
+        "8080": {
+            "label": "X11"
+        }
+    }
 }
