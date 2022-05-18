@@ -14,7 +14,7 @@ Deployed at https://ariperkkio.github.io/vite-everything/.
     -   unit test, headless logic
 -   [ ] `cypress`
     -   [x] component test
-    -   integration test
+    -   [x] integration test
     -   end-to-end test
 -   [x] `sass`
     -   styling
