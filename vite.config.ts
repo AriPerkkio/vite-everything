@@ -2,23 +2,27 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-console.log('Environment is', process.env.NODE_ENV);
+let env = process.env.NODE_ENV;
 
-const dev = process.env.NODE_ENV === 'development';
-const prod = process.env.NODE_ENV === 'production';
+if (!env) {
+    env = process.env.CI ? 'ci-default' : 'development';
+}
+
+console.log('Environment is', env);
+console.log('process.env.CI', process.env.CI);
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
 
     // Deployed at Github Pages
-    base: prod ? '/vite-everything/' : '/',
+    base: env === 'production' ? '/vite-everything/' : '/',
 
     // Fixes HMR in Github Codespaces
-    server: dev ? { hmr: { clientPort: 443 } } : {},
+    server: env === 'development' ? { hmr: { clientPort: 443 } } : {},
 
     test: {
-        include: ['**/*.test.{ts,tsx}'],
+        include: ['src/**/*.test.{ts,tsx}'],
         reporters: ['verbose'],
     },
 });
