@@ -32,3 +32,10 @@ jobs:
               with:
                   command: yarn test:component
                   config-file: config/cypress/cypress.json
+
+            - name: Integration Test
+              uses: cypress-io/github-action@v2
+              with:
+                  install: false
+                  command: yarn test:integration
+                  config-file: test/integration/cypress.json
