@@ -1,0 +1,28 @@
+name: End to end tests
+
+on:
+    workflow_dispatch:
+    workflow_run:
+        workflows:
+            - Deploy
+        types:
+            - completed
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ./.github/actions/setup-and-cache
+
+            - name: Install & Build
+              run: |
+                  yarn install
+                  yarn build
+
+            - name: End to end Test
+              uses: cypress-io/github-action@v2
+              with:
+                  command: yarn test:e2e
+                  config-file: test/end-to-end/cypress.json
