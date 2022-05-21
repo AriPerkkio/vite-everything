@@ -16,10 +16,8 @@ jobs:
             - uses: actions/checkout@v3
             - uses: ./.github/actions/setup-and-cache
 
-            - name: Install & Build
-              run: |
-                  yarn install
-                  yarn build
+            - name: Install
+              run: yarn install
 
             - name: End to end Test
               uses: cypress-io/github-action@v2
