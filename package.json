@@ -10,6 +10,7 @@
         "test": "vitest",
         "test:component": "cypress run-ct --config-file config/cypress/cypress.json",
         "test:integration": "start-server-and-test dev http-get://localhost:3000 'cypress run --config-file test/integration/cypress.json'",
+        "test:e2e": "cypress run --config-file test/end-to-end/cypress.json",
         "cy:open-ct": "cypress open-ct --config-file config/cypress/cypress.json",
         "preview": "vite preview",
         "storybook": "start-storybook --port 6006 --config-dir config/storybook --quiet --loglevel error"

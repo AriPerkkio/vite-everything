@@ -12,9 +12,9 @@ Deployed at https://ariperkkio.github.io/vite-everything/.
     -   documentation
 -   [x] `vitest`
     -   unit test, headless logic
--   [ ] `cypress`
-    -   [x] component test
-    -   [x] integration test
+-   [x] `cypress`
+    -   component test
+    -   integration test
     -   end-to-end test
 -   [x] `sass`
     -   styling
