@@ -25,6 +25,9 @@ jobs:
             - name: Unit Test
               run: yarn test
 
+            - name: Docs Test
+              run: yarn test:docs
+
             - name: Component Test
               uses: cypress-io/github-action@v2
               with:
