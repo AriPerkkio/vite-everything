@@ -11,6 +11,7 @@
         "test:component": "cypress run-ct --config-file config/cypress/cypress.json",
         "test:integration": "start-server-and-test dev http-get://localhost:3000 'cypress run --config-file test/integration/cypress.json'",
         "test:e2e": "cypress run --config-file test/end-to-end/cypress.json",
+        "test:docs": "start-storybook --smoke-test --config-dir config/storybook",
         "cy:open-ct": "cypress open-ct --config-file config/cypress/cypress.json",
         "preview": "vite preview",
         "storybook": "start-storybook --port 6006 --config-dir config/storybook --quiet --loglevel error"
@@ -23,7 +24,7 @@
         "@cypress/react": "^5.12.5",
         "@cypress/vite-dev-server": "^2.2.3",
         "@mdx-js/react": "^2.1.1",
-        "@storybook/builder-vite": "^0.1.35",
+        "@storybook/builder-vite": "^0.1.36",
         "@storybook/react": "^6.5.6",
         "@testing-library/cypress": "^8.0.2",
         "@types/node": "^17.0.36",
