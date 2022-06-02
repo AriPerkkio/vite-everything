@@ -29,14 +29,14 @@ jobs:
               run: yarn test:docs
 
             - name: Component Test
-              uses: cypress-io/github-action@v2
+              uses: cypress-io/github-action@v4
               with:
                   command: yarn test:component
-                  config-file: config/cypress/cypress.json
+                  config-file: config/cypress/cypress.config.ts
 
             - name: Integration Test
-              uses: cypress-io/github-action@v2
+              uses: cypress-io/github-action@v4
               with:
                   install: false
                   command: yarn test:integration
-                  config-file: test/integration/cypress.json
+                  config-file: test/integration/cypress.config.ts

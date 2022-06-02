@@ -20,7 +20,7 @@ jobs:
               run: yarn install
 
             - name: End to end Test
-              uses: cypress-io/github-action@v2
+              uses: cypress-io/github-action@v4
               with:
                   command: yarn test:e2e
-                  config-file: test/end-to-end/cypress.json
+                  config-file: test/end-to-end/cypress.config.ts

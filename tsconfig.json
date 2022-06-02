@@ -17,6 +17,6 @@
         "jsx": "react-jsx",
         "types": ["@testing-library/cypress"]
     },
-    "include": ["src", "test"],
+    "include": ["src", "config", "test"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
