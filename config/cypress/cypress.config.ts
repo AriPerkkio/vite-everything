@@ -11,5 +11,12 @@ export default defineConfig({
             framework: 'react',
             bundler: 'vite',
         },
+
+        setupNodeEvents(on) {
+            on('after:run', () => {
+                console.log('[after:run] cwd is', process.cwd());
+                // > [after:run] cwd is /workspaces/vite-everything/config/cypress
+            });
+        },
     },
 });
