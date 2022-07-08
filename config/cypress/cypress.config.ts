@@ -11,5 +11,14 @@ export default defineConfig({
             framework: 'react',
             bundler: 'vite',
         },
+        setupNodeEvents(on) {
+            on('task', {
+                // eslint-disable-next-line
+                log(message: any) {
+                    console.log(message);
+                    return null;
+                },
+            });
+        },
     },
 });

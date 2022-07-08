@@ -11,3 +11,37 @@ declare global {
 }
 
 Cypress.Commands.add('mount', mount);
+
+beforeEach(() => {
+    const windowExists = !!window;
+    const documentExists = !!document;
+    const NodeExists = !!Node;
+    const ElementExists = !!Element;
+    const DocumentFragmentExists = !!DocumentFragment;
+
+    cy.task('log', '[DEBUG] beforeEach');
+    cy.task('log', { windowExists });
+    cy.task('log', { documentExists });
+    cy.task('log', { NodeExists });
+    cy.task('log', { ElementExists });
+    cy.task('log', { DocumentFragmentExists });
+
+    if (
+        !windowExists ||
+        !documentExists ||
+        !NodeExists ||
+        !ElementExists ||
+        !DocumentFragmentExists
+    ) {
+        throw new Error(
+            'Missing one of' +
+                JSON.stringify({
+                    windowExists,
+                    documentExists,
+                    NodeExists,
+                    ElementExists,
+                    DocumentFragmentExists,
+                })
+        );
+    }
+});
